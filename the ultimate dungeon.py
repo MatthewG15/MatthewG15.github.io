@@ -13,7 +13,7 @@ Z = 0
 H = 0
 enterB = 0
 Armor = 0
-enterC =0
+enterC = 0
 Dust = 0
 skeleton = 0
 attack502 = 0
@@ -21,9 +21,13 @@ attack501 = 0
 hallway = 0
 chest = 0
 GUU = 0
+GUU1 = 0
+GUU2 = 0
 Convo = 0
+Convo1 = 0
 Convo2 = 0
 Convo3 = 0
+Convo4 = 0
 warlock = 0
 
 print "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
@@ -108,12 +112,14 @@ if enterA == 1:
                         print "The bear runs off bleeding back into the darkness"
                         print "**GOoD jOb You HAve DEfeAtEd mY bEaR**"
                         print "**COnTInuE On yOuR PaTH**"
+                        #its stopping here
                         enterB = 1
                 if E == "slash":
                         print "You slash at the bear with all your might!"
                         print "The bear runs off bleeding back into the darkness"
                         print "**GOoD jOb You HAve DEfeAtEd mY bEaR**"
                         print "**COnTInuE On yOuR PaTH**"
+                        #its stopping here
                         enterB = 1
              if weapon == 2:
                     print "(you choose to fight the bear)"
@@ -125,12 +131,14 @@ if enterA == 1:
                        print "The bear runs off bleeding back into the darkness"
                        print "**GOoD jOb You HAve DEfeAtEd mY bEaR**"
                        print "**COnTInuE On yOuR PaTH**" 
+                       #its stopping herree
                        enterB = 1
                     if Z == "throw":
                        print "You throw your mace at the bear with all your might!"
                        print "The bear runs off bleeding back into the darkness"
                        print "**GOoD jOb You HAve DEfeAtEd mY bEaR**"
                        print "**COnTInuE On yOuR PaTH**" 
+                       #its stopping here
                        enterB = 1
 
             if weapon == 3:
@@ -143,15 +151,17 @@ if enterA == 1:
                        print "The bear runs off bleeding back into the darkness"
                        print "**GOoD jOb You HAve DEfeAtEd mY bEaR**"
                        print "**COnTInuE On yOuR PaTH**"
+                       #its stopping here
                        enterB = 1 
                     if H == "hit":
                        print "You hit the bear with your bow with all your might!"
                        print "The bear runs off bleeding back into the darkness"
                        print "**GOoD jOb You HAve DEfeAtEd mY bEaR**"
                        print "**COnTInuE On yOuR PaTH**"
+                       #its stopping here
                        enterB = 1 
         if C == "right":
-            print "**COnGRAjuLaTioNS yOU HaVE CHoSeN ThE CoRRecT PatH**"
+            print "**COnGRATuLaTioNS yOU HaVE CHoSeN ThE CoRRecT PatH**"
             print "**CoNTinUE**"
             enterB = 1
             if enterB == 1:
@@ -163,24 +173,24 @@ if enterA == 1:
                     print "(as you pick up the armor it falls apart)" 
                     print "(you hear a banging at the door so you rush out without grabbing any other armor)"
                     enterC = 1
-                    if Armor == "iron":
+                if Armor == "iron":
                         print "(you grab the iron aromor but it is welded to the floor)"
                         print "(you hear a banging at the door as it collapses)"
                         print "(you rush out of the room without grabbing any other armor)"
                         enterC = 1
-                    if Armor == "leather":
+                if Armor == "leather":
                         print "(your grab the leather armor and it fits perfectly)"
                         print "(you hear a banging at the door and rush out of the room)" 
                         enterC = 2
-                    if enterC == 1:
+                if enterC == 1:
                             print "**I SeE YoU ChoSe mY cUrSEd ARmoR**"
                             print "**GoOd LUck GeTtIng THRouGh ThE ResT Of thE DUnGeOn**"
                             enterD = 1
-                    if enterC == 2:
+                if enterC == 2:
                             print "**GoOd JoB ChOosINg tHe CoRrect ARmOR**"
                             enterD = 1
                     
-                    if enterD == 1:
+                if enterD == 1:
                         print "(you come across some white dust on the ground, do you investigate it or jump over it?)"
                         Dust = raw_input()
                         if Dust == "investigate":
@@ -237,7 +247,7 @@ if enterA == 1:
                             print "(skeleton rises up out of the dust behind you but you handle him with ease)"
                             hallway = 4
                         if hallway == 3:
-                            print "**CONGraJulAtIOnS You HAve DEfeAtEd THe SKEleTon ThAt gAURds tHE KEy tO My-**"
+                            print "**CONGraTulAtIOnS You HAve DEfeAtEd THe SKEleTon ThAt gAURds tHE KEy tO My-**"
                             print "**Oh MY I HAvE SaID TO MuCH**"
                             print "**COnTInuE On THe PaTH**"
                             hallway = 4
@@ -248,137 +258,168 @@ if enterA == 1:
                                 if chest == "open":
                                     print "(as you go to open the chest a large beast come out of the darkness)"
                                     print "(you pull out your weapon ready to fight)"
-                                    if weapon == "1":
+                                    if weapon == 1:
                                         print "(do you jab or slash at the large beast?)"
                                         GUU = raw_input()
                                         if GUU == "jab":
                                             print "(as you jab at the beast it shouts out)"
-                                            print "NONONONONONO please don't hurt me"
-                                            print "1.What! you can talk"
-                                            print "2.Shut up let me kill you"
-                                            print "3.help me open this chest or I'll kill you"
-                                            Convo = raw_input()
-                                            if Convo == "1":
-                                                print "The warlock put a curse on me"
-                                                print "1.What do you mean curse"
-                                                print "2.If you help me save the princess i will help you"
-                                                print "3.How do I know you aren't lying"
-                                                Convo2 = raw_input()
-                                                if Convo2 == "1":
-                                                    print "I used to be a servant for the warlock" 
-                                                    print "but I fell in love with his wife and she the same, so he banished me a dog into the depths of this cavern."
-                                                if Convo2 == "2":
-                                                    print "Alright, Alright, I'll help you"
-                                                if Convo2 == "3":
-                                                    print "I would help you if I could but this chest is for the key holder only."
-                                                    print "   "
-                                                    print "1.I thought the skeleton out there gaurded the key where is it?"
-                                                    print "2.Your large enough, just squash it"
-                                                    print "3.Fine then help me find it"
-                                                    Convo3 = raw_input() 
-                                                    if Convo3 == "1":
-                                                        print "What you defeated the skeleton, oh! Key holder open the chest"
-                                                        print "(as you go to open the chest you hear the warlock)"
-                                                        print "**no please don't oPen that chest**"
-                                                        print "**it conTains my soul and if open I shall die**"
-                                                        print "1.then tell me why I can't open it"
-                                                        print "2.then why don't you come and fight me"
-                                                        F = raw_input()
-                                                        if F == "1":
-                                                            print "**because Then you will never get your princess back**"
-                                                            print "Well then come get us!!!"
-                                                            warlock = 1
-                                                        if F == "2":
+                                            #its stopping here
+                                            Convo1 = 1
+                                        if GUU == "slash":
+                                            print "(as you slash the beast it cries out)"
+                                            #its stopping here
+                                            Convo1 = 1
+                                    if weapon == 2:
+                                        print "(do you swing or throw the mace)"
+                                        GUU1 = raw_input()
+                                        if GUU1 == "swing":
+                                            print "(as you swing your mace the beast shouts out)"
+                                            #its stopping here
+                                            Convo1 = 1
+                                        if GUU1 == "throw":
+                                            print "(you prepare to throw your mace mace but the beast shouts out)"
+                                            #its stopping here
+                                            Convo1 = 1
+                                    if weapon == 3:
+                                        print "(do you shoot the beast or swing your bow)"
+                                        GUU2 = raw_input()
+                                        if GUU2 == "shoot":
+                                            print "(you quiver an arrow but the beast shouts out)"
+                                            #its stopping here
+                                            Convo1 = 1
+                                        if GUU2 == "swing":
+                                            print "(as you swing the bow the beast shouts out)"
+                                            Convo1 = 1                                                                                    
+                                            #its stopping here
+                                        if Convo1 == 1:
+                                                print "NONONONONONO please don't hurt me"
+                                                print "1.What! you can talk"
+                                                print "2.Shut up let me kill you"
+                                                print "3.help me open this chest or I'll kill you"
+                                                Convo = raw_input()
+                                                if Convo == "1":
+                                                    print "The warlock put a curse on me"
+                                                    print "1.What do you mean curse"
+                                                    print "2.If you help me save the princess i will help you"
+                                                    print "3.How do I know you aren't lying"
+                                                    Convo2 = raw_input()
+                                                    if Convo2 == "1":
+                                                        print "I used to be a servant for the warlock" 
+                                                        print "but I falls in love with his wife and she the same, so he banished me a dog into the depths of this cavern."
+                                                        Convo4 = 1
+                                                    if Convo2 == "2":
+                                                        print "Alright, Alright, I'll help you"
+                                                        Convo4 = 1
+                                                    if Convo2 == "3" or Convo4 == 1:
+                                                        print "I would help you if I could but this chest is for the key holder only."
+                                                        print "   "
+                                                        print "1.I thought the skeleton out there gaurded the key where is it?"
+                                                        print "2.Your large enough, just squash it"
+                                                        print "3.Fine then help me find it"
+                                                        Convo3 = raw_input() 
+                                                        if Convo3 == "1":
+                                                            print "What you defeated the skeleton, oh! Key holder open the chest"
+                                                            print "(as you go to open the chest you hear the warlock)"
+                                                            print "**no please don't oPen that chest**"
+                                                            print "**it conTains my soul and if open I shall die**"
+                                                            print "1.then tell me why I can't open it"
+                                                            print "2.then why don't you come and fight me"
+                                                            F = raw_input()
+                                                            if F == "1":
+                                                                print "**because Then you will never get your princess back**"
+                                                                print "Well then come get us!!!"
+                                                                warlock = 1
+                                                            if F == "2":
+                                                                print "**I'm no wArlock"
+                                                                warlock = 1
+                                                            if warlock  == 1:
+                                                                print"(an old man enters the room)"
+                                                                print "**Here I am not a warlock nor Supreme ruleR of the kingdom**"
+                                                                print "**No NO I WoN't TeLL TheM WHo You ARe, No PleASe!"
+                                                                print "(The old man falls to the ground, dead)"
+                                                                print "(As soon as the Warlock dies a door opens, It's The Princess)"
+                                                                print "Congratulations You Have Won"
+                                                                print "Thanks For Playing"
+                                                        if Convo3 == "2":
+                                                            print "I'm sorry I can't do that"
+                                                            print "The only way to open it is to kill the skeleton"
+                                            	            print "('but I did kill the skeleton')"
+                                                            print "What you defeated the skeleton, oh! Key holder open the chest"
+                                                            print "(as you go to open the chest you hear the warlock)"
+                                                            print "**no please don't oPen that chest**"
+                                                            print "**it conTains my soul and if open I shall die**"
+                                                            print "1.then tell me why I can't open it"
+                                                            print "2.then why don't you come and fight me"
+                                                            F = raw_input()
+                                                            if F == "1":
+                                                                print "**because Then you will never get your princess back**"
+                                                                print "Well then come get us!!!"
+                                                                warlock = 1
+                                                            if F == "2":
+                                                                print "**I'm no wArlock"
+                                                                warlock = 1
+                                                            if warlock  == "1":
+                                                                print"(an old man enters the room)"
+                                                                print "**Here I am not a warlock nor Supreme ruleR of the kingdom**"
+                                                                print "**No NO I WoN't TeLL TheM WHo You ARe, No PleASe!"
+                                                                print "(The old man falls to the ground, dead)"
+                                                                print "(As soon as the Warlock dies a door opens, It's The Princess)"
+                                                                print "Contrajulations You Have Won"
+                                                                print "Thanks For Playing"
+                                                        if Convo3 == "3":
+                                                            print "I'm sorry I can't do that"
+                                                            print "The only way to open it is to kill the skeleton"
+                                                            print "('but I did kill the skeleton')"
+                                                            print "What you defeated the skeleton, oh! Key holder open the chest"
+                                                            print "(as you go to open the chest you hear the warlock)"
+                                                            print "**no please don't oPen that chest**"
+                                                            print "**it conTains my soul and if open I shall die**"
+                                                            print "1.then tell me why I can't open it"
+                                                            print "2.then why don't you come and fight me"
+                                                            F = raw_input()
+                                                            if F == "1":
+                                                                print "**because Then you will never get your princess back**"
+                                                                print "Well then come get us!!!"
+                                                                warlock = 1
+                                                            if F == "2":
+                                                                print "**I'm no wArlock"
+                                                                warlock = 1
+                                                            if warlock  == "1":
+                                                                print"(an old man enters the room)"
+                                                                print "**Here I am not a warlock nor Supreme ruleR of the kingdom**"
+                                                                print "**No NO I WoN't TeLL TheM WHo You ARe, No PleASe!"
+                                                                print "(The old man falls to the ground, dead)"
+                                                                print "(As soon as the Warlock dies a door opens, It's The Princess)"
+                                                                print "Congratulations You Have Won"
+                                                                print "Thanks For Playing"
+                                                if Convo == "2":
+                                                    print "I'm Sorry but You Leave Me No Choice"
+                                                    print "**Oh POoR BOY YoU HAVE BEeN KILlED**"
+                                                    print "**LOoKs LiKE THe KING WILl NeVER GEt HIs DAUGHTER BAcK**"
+                                                    print "The story here ends for you. The End."
+                                                if Convo == "3":
+                                                    print "I'm sorry I can't do that"
+                                                    print "The only way to open it is to kill the skeleton"
+                                                    print "('but I did kill the skeleton')"
+                                                    print "What you defeated the skeleton, oh! Key holder open the chest"
+                                                    print "(as you go to open the chest you hear the warlock)"
+                                                    print "**no please don't oPen that chest**"
+                                                    print "**it conTains my soul and if open I shall die**"
+                                                    print "1.then tell me why I can't open it"            
+                                                    print "2.then why don't you come and fight me"
+                                                    F = raw_input()
+                                                    if F == "1":
+                                                                print "**because Then you will never get your princess back**"
+                                                                print "Well then come get us!!!"
+                                                                warlock = 1
+                                                    if F == "2":
                                                             print "**I'm no wArlock"
                                                             warlock = 1
-                                                        if warlock  == "1":
+                                                    if warlock  == "1":
                                                             print"(an old man enters the room)"
                                                             print "**Here I am not a warlock nor Supreme ruleR of the kingdom**"
                                                             print "**No NO I WoN't TeLL TheM WHo You ARe, No PleASe!"
-                                                            print "(The old man fell to the ground, dead)"
+                                                            print "(The old man falls to the ground, dead)"
                                                             print "(As soon as the Warlock dies a door opens, It's The Princess)"
-                                                            print "Congrajulations You Have Won"
-                                                            print "Thanks For Playing"
-                                                    if Convo3 == "2":
-                                                        print "I'm sorry I can't do that"
-                                                        print "The only way to open it is to kill the skeleton"
-                                                        print "('but I did kill the skeleton')"
-                                                        print "What you defeated the skeleton, oh! Key holder open the chest"
-                                                        print "(as you go to open the chest you hear the warlock)"
-                                                        print "**no please don't oPen that chest**"
-                                                        print "**it conTains my soul and if open I shall die**"
-                                                        print "1.then tell me why I can't open it"
-                                                        print "2.then why don't you come and fight me"
-                                                        F = raw_input()
-                                                        if F == "1":
-                                                            print "**because Then you will never get your princess back**"
-                                                            print "Well then come get us!!!"
-                                                            warlock = 1
-                                                        if F == "2":
-                                                            print "**I'm no wArlock"
-                                                            warlock = 1
-                                                        if warlock  == "1":
-                                                            print"(an old man enters the room)"
-                                                            print "**Here I am not a warlock nor Supreme ruleR of the kingdom**"
-                                                            print "**No NO I WoN't TeLL TheM WHo You ARe, No PleASe!"
-                                                            print "(The old man fell to the ground, dead)"
-                                                            print "(As soon as the Warlock dies a door opens, It's The Princess)"
-                                                            print "Congrajulations You Have Won"
-                                                            print "Thanks For Playing"
-                                                    if Convo3 == "3":
-                                                         print "I'm sorry I can't do that"
-                                                         print "The only way to open it is to kill the skeleton"
-                                                         print "('but I did kill the skeleton')"
-                                                         print "What you defeated the skeleton, oh! Key holder open the chest"
-                                                         print "(as you go to open the chest you hear the warlock)"
-                                                         print "**no please don't oPen that chest**"
-                                                         print "**it conTains my soul and if open I shall die**"
-                                                         print "1.then tell me why I can't open it"
-                                                         print "2.then why don't you come and fight me"
-                                                         F = raw_input()
-                                                         if F == "1":
-                                                            print "**because Then you will never get your princess back**"
-                                                            print "Well then come get us!!!"
-                                                            warlock = 1
-                                                         if F == "2":
-                                                            print "**I'm no wArlock"
-                                                            warlock = 1
-                                                         if warlock  == "1":
-                                                            print"(an old man enters the room)"
-                                                            print "**Here I am not a warlock nor Supreme ruleR of the kingdom**"
-                                                            print "**No NO I WoN't TeLL TheM WHo You ARe, No PleASe!"
-                                                            print "(The old man fell to the ground, dead)"
-                                                            print "(As soon as the Warlock dies a door opens, It's The Princess)"
-                                                            print "Congrajulations You Have Won"
-                                                            print "Thanks For Playing"
-                                            if Convo == "2":
-                                                print "I'm Sorry but You Leave Me No Choice"
-                                                print "**Oh POoR BOY YoU HAVE BEeN KILlED**"
-                                                print "**LOoKs LiKE THe KING WILl NeVER GEt HIs DAUGHTER BAcK**"
-                                                print "The story here ends for you. The End."
-                                            if Convo == "3":
-                                                 print "I'm sorry I can't do that"
-                                                 print "The only way to open it is to kill the skeleton"
-                                                 print "('but I did kill the skeleton')"
-                                                 print "What you defeated the skeleton, oh! Key holder open the chest"
-                                                 print "(as you go to open the chest you hear the warlock)"
-                                                 print "**no please don't oPen that chest**"
-                                                 print "**it conTains my soul and if open I shall die**"
-                                                 print "1.then tell me why I can't open it"            
-                                                 print "2.then why don't you come and fight me"
-                                                 F = raw_input()
-                                                 if F == "1":
-                                                            print "**because Then you will never get your princess back**"
-                                                            print "Well then come get us!!!"
-                                                            warlock = 1
-                                                 if F == "2":
-                                                            print "**I'm no wArlock"
-                                                            warlock = 1
-                                                 if warlock  == "1":
-                                                            print"(an old man enters the room)"
-                                                            print "**Here I am not a warlock nor Supreme ruleR of the kingdom**"
-                                                            print "**No NO I WoN't TeLL TheM WHo You ARe, No PleASe!"
-                                                            print "(The old man fell to the ground, dead)"
-                                                            print "(As soon as the Warlock dies a door opens, It's The Princess)"
-                                                            print "Congrajulations You Have Won"
+                                                            print "Congratulations You Have Won"
                                                             print "Thanks For Playing" 
